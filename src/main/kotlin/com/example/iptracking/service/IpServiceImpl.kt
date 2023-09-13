@@ -6,7 +6,5 @@ import org.springframework.stereotype.Service
 
 @Service
 class IpServiceImpl : IpService {
-    override fun retrieveIpAddress(ipAddress: String): IpInfo {
-        return IpInfo(ipAddress)
-    }
+    override fun retrieveIpAddress(ipAddress: String) = IpInfo(ipAddress)
 }
